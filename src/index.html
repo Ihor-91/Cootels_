@@ -12,6 +12,7 @@
     <header class="header">
         <div class="wrapper">
             <nav class="nav">
+<!--                не оставляй в ссылках пустой href делай заглушки #, <a href="#"></a>-->
                 <a href="" class="nav__title">Cootels</a>
                 <div class="header__menu ">
                     <a href="" class="nav__burger">
@@ -27,6 +28,10 @@
                     </div>
                     
                 </div>
+
+                <!-- итак тебе не нужно использовать js там где без него можно обойтись, таким образом если у тебя кнопка ссылка, то должно быть так -->
+                <!-- <a href="#" class="button nav__btn">Get started</a> -->
+                <!-- подобный момент есть ниже в коде, нужно поправить -->
                 <button class="button nav__btn" onclick="window.location.href = '#';">Get started</button>
             </nav>
             <div class="header__block">
@@ -52,6 +57,19 @@
             </div>
         </div>
     </header>
+
+    <!-- старайся отделять enter-ром в коде логические части как header и main как секция между секцией -->
+<!--    пример-->
+<!--    <header>-->
+<!--        -->
+<!--    </header>-->
+<!--    -->
+<!--    <main>-->
+<!--        <section></section>-->
+<!--        -->
+<!--        <section></section>-->
+<!--    </main>-->
+
     <main>
         <section class="hotel">
             <div class="wrapper wrapper__hotel">

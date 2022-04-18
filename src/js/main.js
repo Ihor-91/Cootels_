@@ -16,7 +16,7 @@ function burgerMenu(selector) {
   });
 
   links.on("click", () => toggleMenu());
-  overlay.on("click", () => toggleMenu());
+  // overlay.on("click", () => toggleMenu());
 
   function toggleMenu() {
     menu.toggleClass("burger-active");
@@ -27,6 +27,18 @@ function burgerMenu(selector) {
       $("body").scss("visible");
     }
   }
+
+  // функция toggleMenu должна выглядеть так
+  // function toggleMenu() {
+  //   menu.toggleClass("mobileMenu-visible"); // понятный класс, что бы мы понимали что оно делает, тебе нужно будет поправить стили под этот класс
+  //
+  //   // этот кусок кода говорит нам что когда мобильное меню открыто в мы блокируем скролл в body и обратно включаем его когда меню закрыто (свойства scss так как у тебя его попросто не существует это ошибка)
+  //   if (menu.hasClass("mobileMenu-visible")) {
+  //     $("body").css("overflow", "hidden");
+  //   } else {
+  //     $("body").css("overflow", "visible");
+  //   }
+  // }
 }
 
 burgerMenu(".header__menu");

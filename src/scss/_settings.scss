@@ -70,7 +70,8 @@ button {
     cursor: pointer;
 }
 
-.wrapper{
+// этот файлик не нужно трогать, все свои стили пиши в main.scss, т.е стили .wrapper перенеси в main.scss
+.wrapper {
 	margin: 0 auto;
 	padding: 0 15px;
 }

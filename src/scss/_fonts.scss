@@ -1,3 +1,20 @@
 @include font-face("Inter-Regular", "Inter-Regular", 400);
 @include title-font("montserrat-semibold", "montserrat-semibold", 600);
 @include font-buttons("Inter-Medium", "Inter-Medium", 500);
+
+// нужно удалить лишние миксины "title-font" и "font-buttons", у тебя один миксин через который ты можешь подключать все шрифты
+// должно быть вот так:
+//@include font-face("inter", "Inter-Regular", 400);
+//@include font-face("inter", "Inter-Medium", 500);
+//@include font-face("montserrat", "montserrat-semibold", 600);
+
+// дальше что бы у тебя работали шрифты в main.scss ты должен задать для чего какой шрифт
+// пример
+//body {
+//  font-family: 'inter', sans-serif;
+//}
+//h1, button, a {
+//  font-family: 'montserrat', sans-serif;
+//}
+
+// думаю суть понятна
